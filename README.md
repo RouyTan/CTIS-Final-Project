@@ -10,7 +10,7 @@ This is a math game meant for elementary aged children.
         (2 decimals for addition and subtraction; 0 decimals for division) 
     I also made code that produced the answers for these equations
 
-Panel Classes 
+# Panel Classes 
     I made 4 classes that extends the JPanels. One JPanel for each operation.
     I use the     *Main main = new Main();*    method to access variables from the Main class
     I use multiple JLabels in each Panel
