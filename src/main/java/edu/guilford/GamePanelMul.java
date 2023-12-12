@@ -1,3 +1,5 @@
+//Author: Rou Yu Tan
+
 package edu.guilford;
 
 import java.awt.Color;

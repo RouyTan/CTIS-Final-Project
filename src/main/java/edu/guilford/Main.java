@@ -1,3 +1,5 @@
+//Author: Rou Yu Tan
+
 package edu.guilford;
 import java.util.Random;
 
@@ -30,16 +32,14 @@ public class Main {
         */
 
 
-        //JFRAME and GAMEPANEL
+        //Initialize JFrame
         JFrame myFrame = new JFrame("Student testing");  
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
         JPanel primary = new JPanel();  
         myFrame.getContentPane().add(primary);
 
 
-        //PointsPanel pointsPanel = new PointsPanel();
-        //primary.add(pointsPanel);
-
+        //Add JPanels to the JFrame
         GamePanelAdd studentPanelAdd = new GamePanelAdd();  
         primary.add(studentPanelAdd);
 
@@ -65,6 +65,9 @@ public class Main {
         layeredPane.add(mathProblemLabel);
         secondary.add(layeredPane);
 
+        PointsPanel pointsPanel = new PointsPanel();
+        primary.add(pointsPanel);
+
  */
 
 
@@ -87,9 +90,7 @@ public class Main {
         double intSecond = Double.parseDouble(String.format("%.0f", secondnumber));
 
 
-    
-
-        //Calculate answer to the problem
+        //Calculate answer to the problems
         double additionAnswer = shortenedFirst + shortenedSecond;
             double roundedAdditionAnswer = Double.parseDouble(String.format("%.2f", additionAnswer));
         double subtractionAnswer = shortenedFirst - shortenedSecond;
@@ -98,12 +99,5 @@ public class Main {
             double roundedMultiplicationAnswer = Double.parseDouble(String.format("%.2f", multiplicationAnswer));
         double divisionAnswer = intFirst/intSecond;
             double roundedDivisionAnswer = Double.parseDouble(String.format("%.2f", divisionAnswer));
-
-
-            //double shortenedFirst = Double.parseDouble(String.format("%.2f", firstnumber)); 
-
-
-
-
 
 }
