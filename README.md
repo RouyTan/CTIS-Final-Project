@@ -11,7 +11,8 @@ This is a math game meant for elementary aged children.
     I also made code that produced the answers for these equations
 
 # Panel Classes 
-    I made 4 classes that extends the JPanels. One JPanel for each operation.
+    *line-by-line comments in GamePanelAdd.java
+    I made 4 classes that extends the JPanels. There is one JPanel for each operation.
     I use the     Main main = new Main();    method to access variables from the Main class
     I use multiple JLabels in each Panel
     I use an action listener that stores the values inputed in the text field
